@@ -35,8 +35,6 @@ CREATE TABLE `product` (
   `category` varchar(100) NOT NULL,
   `active` varchar(5) NOT NULL,
   `imgpath` varchar(200) NOT NULL,
-  `uploaded_by` int(11) NOT NULL,
-  `created_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `code` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -44,15 +42,13 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`pid`, `name`, `price`, `details`, `category`, `active`, `imgpath`, `uploaded_by`, `created_date`, `code`) VALUES
-(0, 'roses', 24124100, 'sfafafa', 'Oil Painting', 'Yes', '../shared/images/IMG_20220403_065023_229.jpg', 8, '2023-09-09 17:26:31', '42124'),
-(0, 'village', 412144, 'sfafafa', 'Watercolor Painting', 'Yes', '../shared/images/IMG_20220515_175334_872.jpg', 8, '2023-09-09 17:27:50', '42124'),
-(0, 'village', 412144, 'sfafafa', 'Watercolor Painting', 'Yes', '../shared/images/IMG_20220515_175334_872.jpg', 8, '2023-09-09 17:33:06', '42124'),
-(0, 'Roses', 889393, 'Beatiful painting', 'Oil Painting', 'Yes', '../shared/images/IMG_20220403_065023_229.jpg', 13, '2023-09-09 17:58:06', '23344'),
-(0, 'Village', 2357, 'Beatiful painting', 'Oil Painting', 'Yes', '../shared/images/IMG_20220515_175334_872.jpg', 13, '2023-09-09 17:58:27', '23344'),
-(0, 'Bazzar', 96754, 'Beatiful painting', 'Oil Painting', 'Yes', '../shared/images/IMG_20220429_170912_648.jpg', 13, '2023-09-09 17:58:49', '2576'),
-(0, 'Flowers', 6544, 'Beatiful painting', 'Oil Painting', 'Yes', '../shared/images/IMG_20220413_065241_983.jpg', 13, '2023-09-09 17:59:11', '986'),
-(0, 'Flowers', 6544, 'Beatiful painting', 'Oil Painting', 'Yes', '../shared/images/IMG_20220413_065241_983.jpg', 13, '2023-09-09 17:59:15', '986');
+INSERT INTO `product` (`pid`, `name`, `price`, `details`, `category`, `active`, `imgpath`, `code`) VALUES
+(0, 'brown', 1499, 'Powerlook Men Self Design Casual Brown Shirt', 'Shirt', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping.webp', '42124'),
+(0, 'white', 1399, 'Powerlook Men White Oversized Chest Pocket Casual Shirt', 'Shirt', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping (2).webp', '56984'),
+(0, 'black', 1299, 'Powerlook Men Black Oversized Abstract Print Casual Shirt', 'Shirt', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping (1).webp', '23344'),
+(0, 'M&H', 4599, 'Mast & Harbour Men Black Analogue Watch MFB-PN-HP-3813', 'Watch', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping (4).webp', '2576'),
+(0, 'Rib Knit', 1199, 'Powerlook Men Brown Oversized Rib Knit Plain Casual Shirt', 'Shirt', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping (5).webp', '986'),
+(0, 'titan', 7999, 'Titan 1805KM07 Analog Watch for Men', 'Watch', 'Yes', 'C:\Users\LENOVO\Desktop\Usha\shopping (3).webp', '6987');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
